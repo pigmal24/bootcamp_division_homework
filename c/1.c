@@ -6,7 +6,17 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int num, r = 0;
+
+    scanf("%d", &num);
+
+    while (num != 0) {
+        r *= 10;
+        r += num % 10;
+        num /= 10;
+    }
+    
+    printf("%d\n", r);
 
     return 0;
 }
