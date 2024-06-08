@@ -8,14 +8,19 @@
 
 int main() {
     char c;
+    //int ch;
 
     scanf("%c", &c);
+    //ch = c;
+    c = toupper(c);
     
-    if (isalpha(c)) {
-        if (isupper(c)) printf("O");
-        else printf("X");
+    if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
+        printf("O");
     }
 
-    else printf("X");
+    else {
+        printf("X");
+    }
+
     return 0;
 }

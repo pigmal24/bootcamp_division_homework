@@ -14,6 +14,7 @@ int main() {
         if (n <= 0) {
             printf("X\n");
         }
+        else break;
     }
     
     for (i = 1 ; i <= n ; i++) {
