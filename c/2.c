@@ -14,8 +14,6 @@ int main() {
     printf("BOARD");
 
     return 0;
-}
-
 /*
 #include <stdio.h>
 
@@ -30,3 +28,4 @@ else {
     printf("BOARD");
 }
 */
+}
