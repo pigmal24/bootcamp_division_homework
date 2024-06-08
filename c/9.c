@@ -6,17 +6,15 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
     int n;
     int sum = 0, i;
 
-    do {
-        scanf("%d", &n);
-        if (n <= 0) {
-        printf("X\n");
-        }
+    scan:
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        goto scan;
     }
-    while (n <= 0);
   
     for (i = 1 ; i <= n ; i++) {
         sum += i;

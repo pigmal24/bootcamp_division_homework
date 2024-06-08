@@ -6,18 +6,27 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
     int age;
 
-    scanf("%d", &age);
-
-    if (age > 60) {
-        printf("DISCOUNT\nBOARD");
+    if (scanf("%d", &age) > 60) {
+        printf("DISCOUNT\n");
     }
-        
-    else {
-        printf("BOARD");
-    }
+    printf("BOARD");
 
     return 0;
 }
+
+/*
+#include <stdio.h>
+
+int age;
+
+scanf("%d", &age);
+if (age >= 61) {
+    printf("DISCOUNT\n");
+    printf("BOARD");
+}
+else {
+    printf("BOARD");
+}
+*/

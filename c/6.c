@@ -4,23 +4,15 @@
 */
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
     char c;
 
     scanf("%c", &c);
-    if (c >= 'a') {
-        c = c - 'a' + 'A';
-    }
-
-    if (c == 65 || c == 101 || c == 73 || c == 79 || c == 85) {
-        printf("O");
-    }
-
-    else {
-        printf("X");
-    }
+    
+    if (isupper(c)) printf("O");
+    else printf("X");
 
     return 0;
 }

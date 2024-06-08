@@ -8,16 +8,10 @@
 int main() {
     // 이곳에 코드를 작성해주세요!
     int h;
-    
+
     scanf("%d", &h);
 
-    if (h < 12) {
-        printf("AM");
-    }
-
-    else if (h < 24){
-        printf("PM");
-    }
+    printf("%s", h <= 24 ? ((h >= 12) ? "PM" : "AM") : NULL);
 
     return 0;
 }

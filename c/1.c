@@ -6,17 +6,17 @@
 #include <stdio.h>
 
 int main() {
-    int num, r = 0;
+    int n, r = 0;
 
-    scanf("%d", &num);
+    scanf("%d", &n);
 
-    while (num != 0) {
+    while (n) {
         r *= 10;
-        r += num % 10;
-        num /= 10;
+        r += n % 10;
+        n /= 10;
     }
     
-    printf("%d\n", r);
-
+    printf("%d", r);
+    
     return 0;
 }

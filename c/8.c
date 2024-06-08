@@ -6,9 +6,8 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
-    int n;
-    int fac = 1, sum = 0, i;
+    int n, i;
+    int fac = 1, sum = 0;
 
     scanf("%d", &n);
 
@@ -17,7 +16,8 @@ int main() {
         fac *= i;
     }
   
-    printf("%d\n%d", sum, fac);
+    printf("%d\n", sum);
+    printf("%d\n", fac);
     
     return 0;
 }
