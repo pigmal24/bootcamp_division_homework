@@ -11,8 +11,11 @@ int main() {
 
     scanf("%c", &c);
     
-    if (isupper(c)) printf("O");
-    else printf("X");
+    if (isalpha(c)) {
+        if (isupper(c)) printf("O");
+        else printf("X");
+    }
 
+    else printf("X");
     return 0;
 }

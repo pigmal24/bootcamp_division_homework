@@ -16,18 +16,4 @@ int main() {
     printf("BOARD");
 
     return 0;
-/*
-#include <stdio.h>
-
-int age;
-
-scanf("%d", &age);
-if (age >= 61) {
-    printf("DISCOUNT\n");
-    printf("BOARD");
-}
-else {
-    printf("BOARD");
-}
-*/
 }

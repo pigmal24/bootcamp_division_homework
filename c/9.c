@@ -9,13 +9,13 @@ int main() {
     int n;
     int sum = 0, i;
 
-    scan:
-    scanf("%d", &n);
-
-    if (n <= 0) {
-        goto scan;
+    while (1) {
+        scanf("%d", &n);
+        if (n <= 0) {
+            printf("X\n");
+        }
     }
-  
+    
     for (i = 1 ; i <= n ; i++) {
         sum += i;
     }
