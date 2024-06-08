@@ -8,7 +8,9 @@
 int main() {
     int age;
 
-    if (scanf("%d", &age) > 60) {
+    scanf("%d", &age);
+
+    if (age > 60) {
         printf("DISCOUNT\n");
     }
     printf("BOARD");
